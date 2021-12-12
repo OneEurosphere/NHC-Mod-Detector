@@ -85,8 +85,7 @@ local function MZUMI_fake_script() -- ModCount.LocalScript
 		484765829,	--dj_13dj 
 		42900508, 	--Dominic8u
 		83047695,	--Timshep07
-		25485871	--Dobblo 
-		
+		25485871,	--Dobblo 
 	}
 	
 	u3.NewNotification("Made by RBXExploitShield.", "Credits", "Green")
@@ -103,22 +102,17 @@ local function MZUMI_fake_script() -- ModCount.LocalScript
 		if table.find(mods, player.UserId) then 
 			IngameMods = IngameMods + 1
 			table.insert(ModsNames, player.Name)
-			
 		end
 	end
 	
 	if IngameMods > 0 then
-		
 		_ModCountFrame.ImageColor3 = Color3.fromRGB(244,67,54)
 		u3.NewNotification("A moderator is in game.", "Moderator in Game!", "Green")
 		ModCount.Text = IngameMods
-	
 	elseif IngameMods == 0 then
-	
 		_ModCountFrame.ImageColor3 = Color3.fromRGB(76,175,80)
 		u3.NewNotification("There are no moderators in game.", "No Moderator(s) in Game!", "Green")
 		ModCount.Text = IngameMods
-	
 	end
 	
 	game.Players.PlayerAdded:Connect(function(player)
@@ -129,15 +123,11 @@ local function MZUMI_fake_script() -- ModCount.LocalScript
 			u3.NewNotification(player.Name .. " has joined.", "Moderator Joined!", "Green")
 			
 			if IngameMods > 0 then
-	
 				_ModCountFrame.ImageColor3 = Color3.fromRGB(244,67,54)
 				ModCount.Text = IngameMods
-	
 			elseif IngameMods == 0 then
-	
 				_ModCountFrame.ImageColor3 = Color3.fromRGB(76,175,80)
 				ModCount.Text = IngameMods
-	
 			end
 		end
 	end)
@@ -155,30 +145,21 @@ local function MZUMI_fake_script() -- ModCount.LocalScript
 			end
 			
 			if IngameMods > 0 then
-	
 				_ModCountFrame.ImageColor3 = Color3.fromRGB(244,67,54)
 				ModCount.Text = IngameMods
-	
 			elseif IngameMods == 0 then
-	
 				_ModCountFrame.ImageColor3 = Color3.fromRGB(76,175,80)
 				ModCount.Text = IngameMods
-	
 			end
 		end
 	end)
 	
 	_ModCountFrame.MouseButton1Click:Connect(function()
-		
 		if #ModsNames > 0 then
-	
 			local ListOfIngameMods = table.concat(ModsNames, "\n- ")
 			u3.NewNotification("- " .. ListOfIngameMods, "Moderator(s) in Game:", "Green", true)
-	
 		elseif #ModsNames == 0 then
-	
 			u3.NewNotification("There are no moderators in game.", "No Moderator(s) in Game!", "Green", true)
-	
 		end
 	end)
 	
