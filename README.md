@@ -1,6 +1,6 @@
-**STATUS: WORKING!**
+**STATUS: OBSOLETE!**
 
-This script was made for the roblox game called [New Haven County](https://www.roblox.com/games/979209050/New-Haven-County).
+This script was made for [New Haven County](https://www.roblox.com/games/979209050/New-Haven-County).
 
 To use it, you just execute the script while in the game and it'll notify you of the following: 
   - if a mod joins or leaves the server
@@ -12,4 +12,4 @@ Screenshots:
 ![image](https://user-images.githubusercontent.com/63873427/125530537-f2e75baa-19ef-49e9-a309-6aafa345c1e9.png)
 ![image](https://user-images.githubusercontent.com/63873427/125530526-0fa0815c-c046-4992-a6fb-6ddb346d5708.png)
   
- If you have any comments, concerns, suggestions, or questions, feel free to contact me on discord at RBXExploitShield#0251.
+*Last Updated: July 13th, 2021*
