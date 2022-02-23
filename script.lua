@@ -88,8 +88,6 @@ local function MZUMI_fake_script() -- ModCount.LocalScript
 		25485871,	--Dobblo 
 	}
 	
-	u3.NewNotification("Made by RBXExploitShield.", "Credits", "Green")
-	
 	local function findValue(whichArray, value)
 		for currentIndex = 1, #whichArray do
 			if whichArray[currentIndex] == value then
